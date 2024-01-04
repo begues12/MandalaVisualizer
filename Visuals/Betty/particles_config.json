@@ -1,0 +1,9 @@
+{
+    "total_particles": 50,
+    "src": "Visuals/Betty/particle.png",
+    "color": [255, 0, 0],
+    "size_min": 25,
+    "size_max": 45,
+    "velocity_range": [1, 3],
+    "reacts_to_sound": true
+}
