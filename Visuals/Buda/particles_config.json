@@ -1,0 +1,10 @@
+{
+    "src": "Visuals/Buda/particle.png",
+    "color": [0, 0, 255],
+    "size_min": 15,
+    "size_max": 30,
+    "velocity_range": [1, 2],
+    "shape": "circle",  
+    "movement_pattern": "linear", 
+    "reacts_to_sound": false
+}
