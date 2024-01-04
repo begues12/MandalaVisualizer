@@ -102,7 +102,6 @@ class VisualManager:
 
 
     def draw_loading(self):
-        self.screen.blit(self.title_text, (self.screen.get_width() // 2 - self.title_text_rect.width // 2, 100))
         for ball in self.loading_balls:
             ball.update()
             ball.draw(self.screen)

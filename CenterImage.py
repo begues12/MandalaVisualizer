@@ -12,13 +12,18 @@ class CenterImage:
 
     def update_size(self, volume_level, max_scale=1.5, max_size=(200, 200)):
         """Ajusta el tamaño de la imagen en función del nivel de volumen."""
-        target_scale = 1 + (max_scale - 1) * volume_level
-        new_width = int(self.original_size[0] * target_scale)
-        new_height = int(self.original_size[1] * target_scale)
+        Console.log(f"Volume level: {volume_level}")
+        new_width = int(self.original_size[0])
+        new_height = int(self.original_size[1])
 
         new_width = min(new_width, max_size[0])
         new_height = min(new_height, max_size[1])
 
+        target_scale = 1 + (max_scale - 1) * volume_level
+
+        new_width = int(new_width * target_scale)
+        new_height = int(new_height * target_scale)
+        
         self.current_size = (new_width, new_height)
         self.current_image = pygame.transform.scale(self.original_image, self.current_size)
         
